@@ -10,9 +10,20 @@ npm install check-file
 
 ###Import module for Node.js:
 ```js
-var cfile = require("check-file")
+var cfile= require('../index.js')
+var url_list = [
+"file.jpg",
+"file.html",
+"http://asdasjjpgnpm",
+"mpeg.adsa.png.net",
+"h.png.mpge",
+"h.png.mpg",
+"a.middleware"
+]
 
-if(!cfile(url)) console.log("this url contains a file!")
+url_list.forEach((e) => {
+        if (cfile(e)) console.log(`${e} is file.`)
+})
 ```
 
 ## License

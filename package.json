@@ -1,7 +1,7 @@
 {
   "name": "check-file",
-  "version": "0.0.1",
-  "description": "Check string is file",
+  "version": "0.0.2",
+  "description": "Check url is file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
