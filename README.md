@@ -9,7 +9,7 @@ npm install check-file
 ```
 
 ###Import module for Node.js:
-``js
+```js
 var cfile = require("check-file")
 
 if(!cfile(url)) console.log("this url contains a file!")
