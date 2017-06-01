@@ -1,20 +1,33 @@
 {
   "name": "check-file",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Check url is file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha ./test/test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/warlock/check-file.git"
   },
-  "keywords": ["mime","utils", "file", "files", "uri", "mime-types", "extension","type"],
+  "keywords": [
+    "mime",
+    "utils",
+    "file",
+    "files",
+    "uri",
+    "mime-types",
+    "extension",
+    "type"
+  ],
   "author": "Josep Subils",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/warlock/check-file/issues"
   },
-  "homepage": "https://github.com/warlock/check-file#readme"
+  "homepage": "https://github.com/warlock/check-file#readme",
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "mocha": "^3.4.2"
+  }
 }
