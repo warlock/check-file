@@ -10,8 +10,8 @@ npm install check-file
 
 ### Import module for Node.js:
 ```js
-var cfile= require('../index.js')
-var url_list = [
+const cfile = require('../index.js')
+const url_list = [
 "file.jpg",
 "file.html",
 "http://asdasjjpgnpm",
@@ -21,8 +21,8 @@ var url_list = [
 "a.middleware"
 ]
 
-url_list.forEach((e) => {
-        if (cfile(e)) console.log(`${e} is file.`)
+url_list.forEach(e => {
+  if (cfile(e)) console.log(`${e} is file.`)
 })
 ```
 
