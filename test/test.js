@@ -1,5 +1,6 @@
-var cfile = require('../index.js')
-var chai = require('chai')
+/*global describe it*/
+var cfile = require('../index.js');
+var chai = require('chai');
 var arr = [
   "file.jpg",
   "file.html",
@@ -9,22 +10,24 @@ var arr = [
   "h.png.mpg",
   "h.pngmpg",
   "a.middleware"
-]
+];
 
-describe("Checking multiple values", () => {
-  it('Returns a boolean', () => {
-    arr.forEach((e) => {
-      chai.assert.isBoolean(cfile(e))
+describe("Checking multiple values", function () {
+  it('Returns a boolean', function  () {
+    arr.forEach(function (e) {
+      chai.assert.isBoolean(cfile(e));
+    });
+  });
+
+  it('Returns a 2 files', function () {
+    var files = arr.filter(cfile);
+    chai.assert.lengthOf(files, 2);
+  });
+
+  it('Returns a 6 no file', function () {
+    var nofiles = arr.filter(function (e) {
+      return !cfile(e);
     })
-  })
-
-  it('Returns a 2 files', () => {
-    var files = arr.filter(cfile)
-    chai.assert.lengthOf(files, 2)
-  })
-
-  it('Returns a 6 no file', () => {
-    var nofiles = arr.filter((e) => !cfile(e))
-    chai.assert.lengthOf(nofiles, 6)
-  })
-})
+    chai.assert.lengthOf(nofiles, 6);
+  });
+});
