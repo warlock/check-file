@@ -1,6 +1,8 @@
 # check-file
 >check url is file
 
+[![Build Status](https://travis-ci.org/warlock/check-file.svg?branch=master)](https://travis-ci.org/warlock/check-file)
+
 https://www.npmjs.com/package/check-file
 
 ### Install
