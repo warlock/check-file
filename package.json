@@ -1,6 +1,6 @@
 {
   "name": "check-file",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Check url is file",
   "main": "index.js",
   "scripts": {
