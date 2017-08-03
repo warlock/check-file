@@ -1,5 +1,5 @@
 # check-file
->check url is file
+> Check url is file
 
 [![Build Status](https://travis-ci.org/warlock/check-file.svg?branch=master)](https://travis-ci.org/warlock/check-file) [![Coverage Status](https://coveralls.io/repos/github/warlock/check-file/badge.svg?branch=master)](https://coveralls.io/github/warlock/check-file?branch=master)
 
@@ -7,20 +7,21 @@ https://www.npmjs.com/package/check-file
 
 ### Install
 ```sh
-npm install check-file
+npm install check-file -S
 ```
 
 ### Import module for Node.js:
 ```js
 const cfile = require('../index.js')
+
 const url_list = [
-"file.jpg",
-"file.html",
-"http://asdasjjpgnpm",
-"mpeg.adsa.png.net",
-"h.png.mpge",
-"h.png.mpg",
-"a.middleware"
+  "file.jpg",
+  "file.html",
+  "http://asdasjjpgnpm",
+  "mpeg.adsa.png.net",
+  "h.png.mpge",
+  "h.png.mpg",
+  "a.middleware"
 ]
 
 url_list.forEach(e => {
@@ -30,7 +31,7 @@ url_list.forEach(e => {
 
 ## License
 The MIT License (MIT)
-Copyright (c) 2015 Josep Subils Rigau (josep@spellbook.io)
+Copyright (c) 2015 Josep Subils (js@js.gl)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
