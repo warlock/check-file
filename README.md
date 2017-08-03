@@ -1,7 +1,7 @@
 # check-file
 >check url is file
 
-[![Build Status](https://travis-ci.org/warlock/check-file.svg?branch=master)](https://travis-ci.org/warlock/check-file)
+[![Build Status](https://travis-ci.org/warlock/check-file.svg?branch=master)](https://travis-ci.org/warlock/check-file) [![Coverage Status](https://coveralls.io/repos/github/warlock/check-file/badge.svg?branch=master)](https://coveralls.io/github/warlock/check-file?branch=master)
 
 https://www.npmjs.com/package/check-file
 

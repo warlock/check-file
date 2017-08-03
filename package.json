@@ -4,7 +4,8 @@
   "description": "Check url is file",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha ./test/test.js"
+    "test": "./node_modules/mocha/bin/mocha ./test/test.js",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
   "homepage": "https://github.com/warlock/check-file#readme",
   "devDependencies": {
     "chai": "^4.0.1",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5"
   }
 }
