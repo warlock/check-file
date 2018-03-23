@@ -12,7 +12,7 @@ npm install check-file -S
 
 ### Import module for Node.js:
 ```js
-const cfile = require('../index.js')
+const checkFile = require('check-file')
 
 const url_list = [
   "file.jpg",
@@ -24,9 +24,11 @@ const url_list = [
   "a.middleware"
 ]
 
-url_list.forEach(e => {
-  if (cfile(e)) console.log(`${e} is file.`)
-})
+url_list.map(checkFile)
+```
+
+```sh
+[true, false, false, false, false, true, false]
 ```
 
 ## License
