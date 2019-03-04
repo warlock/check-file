@@ -1,4 +1,8 @@
 module.exports = [
+  'gz',
+  'bz',
+  'bz2',
+  'xz',
   'pdf',
   'jpg',
   'js',
@@ -78,6 +82,7 @@ module.exports = [
   'swf',
   'tar',
   'tif',
+  'tiff',
   'ttf',
   'vsd',
   'vis',
@@ -90,5 +95,6 @@ module.exports = [
   'zip',
   '3gp',
   '3g2',
-  '7z'
+  '7z',
+  'ini'
 ]
