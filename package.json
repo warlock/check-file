@@ -29,8 +29,8 @@
   "homepage": "https://github.com/warlock/check-file#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0",
-    "coveralls": "^3.0.2",
-    "istanbul": "^0.4.5"
+    "coveralls": "^3.0.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.0.2"
   }
 }
