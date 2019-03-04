@@ -13,9 +13,18 @@ npm install check-file -S
 ### Import module for Node.js:
 ```js
 const checkFile = require('check-file')
+```
 
+### Simple check is file:
+```js
+if (checkFile('file.jpg')) console.log('File found!')
+```
+
+### Multiple check files with map:
+```js
 const url_list = [
   "file.jpg",
+  "file.jpeg",
   "file.html",
   "http://asdasjjpgnpm",
   "mpeg.adsa.png.net",
@@ -27,8 +36,70 @@ const url_list = [
 url_list.map(checkFile)
 ```
 
-```sh
-[true, false, false, false, false, true, false]
+#### Returns:
+```js
+[true, true, false, false, false, false, true, false]
+```
+
+### Find files
+```js
+const url_list = [
+  "file.jpg",
+  "file.jpeg",
+  "file.html",
+  "http://asdasjjpgnpm",
+  "mpeg.adsa.png.net",
+  "h.png.mpge",
+  "h.png.mpg",
+  "a.middleware"
+]
+
+url_list.find(checkFile)
+```
+
+#### Returns:
+```js
+[
+  "file.jpg",
+  "file.jpeg",
+  "h.png.mpg",
+]
+```
+
+### Simple check is file:
+```js
+if (!checkFile('file.jpg', ['png'])) console.log('Not png found!')
+```
+
+
+### Find your files
+
+```js
+const url_list = [
+  "file.jpg",
+  "file.jpeg",
+  "file.html",
+  "http://asdasjjpgnpm",
+  "mpeg.adsa.png.net",
+  "h.png.mpge",
+  "h.png.mpg",
+  "a.middleware"
+]
+
+const extensions = [
+  'jpg',
+  'jpeg'
+]
+
+url_list.map(file => checkFile(file, extensions))
+```
+
+##### Return:
+```js
+[
+  "file.jpg",
+  "file.jpeg"
+]
 ```
 
 ## License
