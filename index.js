@@ -1,11 +1,12 @@
-var ext = require('./files.js');
+var def_extensions = require('./files.js')
 
-module.exports = function (str) {
-  var res = false;
-  str = str.toLowerCase();
-  ext.forEach(function (e) {
-    var reg = new RegExp("\\." + e + "\$");
-    if (reg.test(str)) res = true;
-  });
-  return res;
-};
+module.exports = (str, ext_input) => {
+  const extensions = ext_input && Array.isArray(ext_input) ? ext_input : def_extensions
+  var res = false
+  str = str.toLowerCase()
+  extensions.forEach(e => {
+    var reg = new RegExp('\\.' + e + '$')
+    if (reg.test(str)) res = true
+  })
+  return res
+}
