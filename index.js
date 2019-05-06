@@ -1,6 +1,7 @@
 var def_extensions = require('./files.js')
 
 module.exports = (str, ext_input) => {
+  if (str.includes(null, undefined, '')) return ''
   const extensions = ext_input && Array.isArray(ext_input) ? ext_input : def_extensions
   var res = false
   str = str.toLowerCase()
