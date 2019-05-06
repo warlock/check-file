@@ -1,6 +1,6 @@
 {
   "name": "check-file",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Check url is file",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,16 @@
     "type": "git",
     "url": "git+https://github.com/warlock/check-file.git"
   },
-  "keywords": ["mime", "utils", "file", "files", "uri", "mime-types", "extension", "type"],
+  "keywords": [
+    "mime",
+    "utils",
+    "file",
+    "files",
+    "uri",
+    "mime-types",
+    "extension",
+    "type"
+  ],
   "author": "Josep Subils",
   "license": "MIT",
   "bugs": {
